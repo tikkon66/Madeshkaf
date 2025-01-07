@@ -116,11 +116,13 @@ footer {
     flex-direction: column;
     gap: 15px;
     color: #fff;
+    margin: 5px;
     margin-right: 83px;
 }
 
 .footer__logo {
     align-self: center;
+    margin: 5px;
 }
 
 .map__img {
