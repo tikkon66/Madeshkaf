@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Cormorant-Regular';
+    src: url('../fonts/Cormorant-Regular.ttf') format('truetype');
+}
+
+/* общий */
+/* 
+* {
+    outline: 1px solid red;
+} */
+
+section {
+    overflow: hidden;
+}
+
+/* index */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    display: none;
+}
+
+
+.up {
+    padding: 1.5% 1.2%;
+    border: solid 2px #AF9678;
+    background-color: #ffffffbd;
+    position: fixed;
+    right: 45px;
+    bottom: 25px;
+    z-index: 1;
+}
+
+.header {
+    background-image: url(../img/index/header/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.logo {
+    min-width: 202px;
+    max-width: 202px;
+}
+
+.header__info {
+    padding: 32px 0;
+    max-width: 1200px;
+    margin-top: 32px;
+    display: flex;
+    align-content: center;
+    margin: auto;
+}
+
+.header__list {
+    margin-left: 66px;
+    margin-right: 25px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.list-bar {
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-bar__item {
+    display: flex;
+    gap: 8px;
+}
+
+.list-bar__item-link {
+    font-family: 'Gilroy-Light';
+    font-size: 14px;
+    color: #11100E;
+}
+
+
+
+/*  */
+
+
+/*  */
+
+footer {
+    padding: 54px 0;
+    min-height: 360px;
+    background: #937A60;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.footer__info {
+    display: flex;
+
+}
+
+.footer__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    margin-right: 83px;
+}
+
+.footer__logo {
+    align-self: center;
+}
+
+.map__img {
+    min-width: 160px;
+    min-height: 146px;
+}
+
+.map {
+    margin-top: 32px;
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+
+    .header__nav,
+    .header__info-item,
+    .map1 {
+        display: none;
+    }
+
+    .header__info {
+        max-width: 770px;
+        padding: 23px 20px;
+        justify-content: space-between;
+    }
+
+    .menu,
+    .map {
+        display: block;
+    }
+    
+    .footer__info {
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    
+.list-bar {
+    margin-top: 35px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-bar__item {
+    display: flex;
+    gap: 3px;
+}
+
+.list-bar__item-link {
+    font-size: 12px;
+}
+}
